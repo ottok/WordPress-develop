@@ -34,12 +34,12 @@
   // In version 1.x of PclZip, the separator for file list is a space
   // (which is not a very smart choice, specifically for windows paths !).
   // A better separator should be a comma (,). This constant gives you the
-  // abilty to change that.
+  // ability to change that.
   // However notice that changing this value, may have impact on existing
   // scripts, using space separated filenames.
-  // Recommanded values for compatibility with older versions :
+  // Recommended values for compatibility with older versions :
   //define( 'PCLZIP_SEPARATOR', ' ' );
-  // Recommanded values for smart separation of filenames.
+  // Recommended values for smart separation of filenames.
   if (!defined('PCLZIP_SEPARATOR')) {
     define( 'PCLZIP_SEPARATOR', ',' );
   }
@@ -248,7 +248,7 @@
   //   When a directory is in the list, the directory and its content is added
   //   in the archive.
   //   In this synopsis, the function takes an optional variable list of
-  //   options. See bellow the supported options.
+  //   options. See below the supported options.
   // Parameters :
   //   $p_filelist : An array containing file or directory names, or
   //                 a string containing one filename or one directory name, or
@@ -1064,7 +1064,7 @@
   // Function : deleteByIndex()
   // Description :
   //   ***** Deprecated *****
-  //   delete(PCLZIP_OPT_BY_INDEX, $p_index) should be prefered.
+  //   delete(PCLZIP_OPT_BY_INDEX, $p_index) should be preferred.
   // --------------------------------------------------------------------------------
   function deleteByIndex($p_index)
   {
@@ -1126,7 +1126,7 @@
         return 0;
       }
 
-      // ----- Read the central directory informations
+      // ----- Read the central directory information
       $v_central_dir = array();
       if (($v_result = $this->privReadEndCentralDir($v_central_dir)) != 1)
       {
@@ -1698,7 +1698,7 @@
               if ($v_result_list[$p_options_list[$i]][$j]['start'] < $v_sort_value) {
                   $v_sort_flag=true;
 
-                  // ----- TBC : An automatic sort should be writen ...
+                  // ----- TBC : An automatic sort should be written ...
                   // ----- Error log
                   PclZip::privErrorLog(PCLZIP_ERR_INVALID_OPTION_VALUE, "Invalid order of index range for option '".PclZipUtilOptionText($p_options_list[$i])."'");
 
@@ -2189,7 +2189,7 @@
       return $v_result;
     }
 
-    // ----- Read the central directory informations
+    // ----- Read the central directory information
     $v_central_dir = array();
     if (($v_result = $this->privReadEndCentralDir($v_central_dir)) != 1)
     {
@@ -2391,7 +2391,7 @@
   // Function : privAddList()
   // Description :
   //   $p_add_dir and $p_remove_dir will give the ability to memorize a path which is
-  //   different from the real path of the file. This is usefull if you want to have PclTar
+  //   different from the real path of the file. This is useful if you want to have PclTar
   //   running in any directory, and memorize relative path from an other directory.
   // Parameters :
   //   $p_list : An array containing the file or directory names to add in the tar
@@ -2631,7 +2631,7 @@
         $v_result = 1;
       }
 
-      // ----- Update the informations
+      // ----- Update the information
       // Only some fields can be modified
       if ($p_header['stored_filename'] != $v_local_header['stored_filename']) {
         $p_header['stored_filename'] = PclZipUtilPathReduction($v_local_header['stored_filename']);
@@ -2783,7 +2783,7 @@
         $v_result = 1;
       }
 
-      // ----- Update the informations
+      // ----- Update the information
       // Nothing can be modified
     }
 
@@ -3169,7 +3169,7 @@
       return PclZip::errorCode();
     }
 
-    // ----- Read the central directory informations
+    // ----- Read the central directory information
     $v_central_dir = array();
     if (($v_result = $this->privReadEndCentralDir($v_central_dir)) != 1)
     {
@@ -3220,7 +3220,7 @@
   // --------------------------------------------------------------------------------
   // Function : privConvertHeader2FileInfo()
   // Description :
-  //   This function takes the file informations from the central directory
+  //   This function takes the file information from the central directory
   //   entries and extract the interesting parameters that will be given back.
   //   The resulting file infos are set in the array $p_info
   //     $p_info['filename'] : Filename with full path. Given by user (add),
@@ -3313,7 +3313,7 @@
       return $v_result;
     }
 
-    // ----- Read the central directory informations
+    // ----- Read the central directory information
     $v_central_dir = array();
     if (($v_result = $this->privReadEndCentralDir($v_central_dir)) != 1)
     {
@@ -3713,7 +3713,7 @@
       	$v_result = PCLZIP_ERR_USER_ABORTED;
       }
 
-      // ----- Update the informations
+      // ----- Update the information
       // Only some fields can be modified
       $p_entry['filename'] = $v_local_header['filename'];
     }
@@ -4080,7 +4080,7 @@
       	$v_result = PCLZIP_ERR_USER_ABORTED;
       }
 
-      // ----- Update the informations
+      // ----- Update the information
       // Only some fields can be modified
       $p_entry['filename'] = $v_local_header['filename'];
     }
@@ -4193,7 +4193,7 @@
       	$v_result = PCLZIP_ERR_USER_ABORTED;
       }
 
-      // ----- Update the informations
+      // ----- Update the information
       // Only some fields can be modified
       $p_entry['filename'] = $v_local_header['filename'];
     }
@@ -4689,7 +4689,7 @@
       return $v_result;
     }
 
-    // ----- Read the central directory informations
+    // ----- Read the central directory information
     $v_central_dir = array();
     if (($v_result = $this->privReadEndCentralDir($v_central_dir)) != 1)
     {
@@ -5075,7 +5075,7 @@
       return $v_result;
     }
 
-    // ----- Read the central directory informations
+    // ----- Read the central directory information
     $v_central_dir = array();
     if (($v_result = $this->privReadEndCentralDir($v_central_dir)) != 1)
     {
@@ -5095,7 +5095,7 @@
       return $v_result;
     }
 
-    // ----- Read the central directory informations
+    // ----- Read the central directory information
     $v_central_dir_to_add = array();
     if (($v_result = $p_archive_to_add->privReadEndCentralDir($v_central_dir_to_add)) != 1)
     {
