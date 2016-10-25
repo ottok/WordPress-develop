@@ -346,7 +346,7 @@
 
 	});
 
-	test('Advanced image dialog overriden border style options on empty editor', function(){
+	test('Advanced image dialog overridden border style options on empty editor', function(){
 		editor.settings.image_advtab = true;
 		editor.settings.image_dimensions = false;
 
@@ -376,7 +376,7 @@
 
 	});
 
-	test('Advanced image dialog overriden margin style options on empty editor', function(){
+	test('Advanced image dialog overridden margin style options on empty editor', function(){
 		editor.settings.image_advtab = true;
 		editor.settings.image_dimensions = false;
 

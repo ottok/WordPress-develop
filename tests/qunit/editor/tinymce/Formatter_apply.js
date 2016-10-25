@@ -151,7 +151,7 @@ test('Selection spanning from within format to outside format with toggle off', 
 	rng.setEnd(editor.dom.select('p')[0].lastChild, 2);
 	editor.selection.setRng(rng);
 	editor.formatter.toggle('format');
-	equal(getContent(), '<p><b>1234</b></p>', 'Extend formating if start of selection is already formatted');
+	equal(getContent(), '<p><b>1234</b></p>', 'Extend formatting if start of selection is already formatted');
 });
 
 test('Inline element on partially selected text', function() {

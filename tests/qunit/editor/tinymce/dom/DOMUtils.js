@@ -612,7 +612,7 @@
 		ok(DOM.isEmpty(DOM.get('test')), 'Non empty complex HTML with space');
 
 		DOM.setHTML('test', '<div><span><b></b></span><b></b><em><a name="x"></a></em></div>');
-		ok(!DOM.isEmpty(DOM.get('test')), 'Non empty complex HTML with achor name');
+		ok(!DOM.isEmpty(DOM.get('test')), 'Non empty complex HTML with anchor name');
 
 		DOM.setHTML('test', '<img src="tinymce/ui/img/raster.gif">');
 		ok(!DOM.isEmpty(DOM.get('test')), 'Non empty html with img element');
