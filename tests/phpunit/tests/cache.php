@@ -285,7 +285,7 @@ class Tests_Cache extends WP_UnitTestCase {
 		global $wp_object_cache;
 
 		if ( wp_using_ext_object_cache() ) {
-			// External caches will contain property values that contain non-matching resource IDs
+			// External caches will contain property values that contain non-matchingg resource IDs
 			$this->assertInstanceOf( 'WP_Object_Cache', $wp_object_cache  );
 		} else {
 			$this->assertEquals( $wp_object_cache, $new_blank_cache_object );

@@ -671,7 +671,7 @@ class Tests_User_Capabilities extends WP_UnitTestCase {
 	}
 
 	function test_role_add_cap() {
-		// change the capabilites associated with a role and make sure the change is reflected in has_cap()
+		// change the capabilities associated with a role and make sure the change is reflected in has_cap()
 
 		global $wp_roles;
 		$role_name = rand_str();
@@ -711,7 +711,7 @@ class Tests_User_Capabilities extends WP_UnitTestCase {
 	}
 
 	function test_role_remove_cap() {
-		// change the capabilites associated with a role and make sure the change is reflected in has_cap()
+		// change the capabilities associated with a role and make sure the change is reflected in has_cap()
 
 		global $wp_roles;
 		$role_name = rand_str();

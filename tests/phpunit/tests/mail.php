@@ -102,7 +102,7 @@ class Tests_Mail extends WP_UnitTestCase {
 
 		wp_mail( $to, $subject, $message, $headers );
 
-		// WordPress 3.2 and later correctly split the address into the two parts and send them seperately to PHPMailer
+		// WordPress 3.2 and later correctly split the address into the two parts and send them separately to PHPMailer
 		// Earlier versions of PHPMailer were not touchy about the formatting of these arguments.
 
 		//retrieve the mailer instance
@@ -126,7 +126,7 @@ class Tests_Mail extends WP_UnitTestCase {
 
 		wp_mail( $to, $subject, $message );
 
-		// WordPress 3.2 and later correctly split the address into the two parts and send them seperately to PHPMailer
+		// WordPress 3.2 and later correctly split the address into the two parts and send them separately to PHPMailer
 		// Earlier versions of PHPMailer were not touchy about the formatting of these arguments.
 		$mailer = tests_retrieve_phpmailer_instance();
 		$this->assertEquals( 'address@tld.com',                   $mailer->get_recipient( 'to' )->address );

@@ -719,7 +719,7 @@ Plus, if it crashes, no one will care.</p>
 <img class="alignright" src="http://www.example.com/postimages/2013/philipmetroid.jpg" alt="" width="50" height="50" />
 <p class="triangle-right right">PLOT TWIST</p>
 <img class="alignleft" src="http://www.example.com/postimages/2013/aarone.jpeg" alt="" width="50" height="50" />
-<p class="triangle-right lefttwo">Video of famous director eating grilled Sandwich while swiping with greasy fingers.</p>
+<p class="triangle-right lefttwo">Video of famous director eating grilled Sandwhich while swiping with greasy fingers.</p>
 <img class="alignright" src="http://www.example.com/postimages/2013/philipmetroid.jpg" alt="" width="50" height="50" />
 <p class="triangle-right right">WHOA</p>
 <img class="alignleft" src="http://www.example.com/postimages/2013/bobm.jpeg" alt="" width="50" height="50" />

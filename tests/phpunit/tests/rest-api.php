@@ -256,9 +256,9 @@ class Tests_REST_API extends WP_UnitTestCase {
 	}
 
 	/**
-	 * The 'methods' arg should a comma seperated string.
+	 * The 'methods' arg should a comma separated string.
 	 */
-	public function test_route_method_comma_seperated() {
+	public function test_route_method_comma_separated() {
 		register_rest_route( 'test-ns', '/test', array(
 			'methods'  => 'GET,POST',
 			'callback' => '__return_null',

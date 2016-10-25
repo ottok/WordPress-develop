@@ -960,7 +960,7 @@ class Tests_Multisite_Site extends WP_UnitTestCase {
 	 * @param string $value          The sanitized option value.
 	 * @param string $option         The option name.
 	 * @param string $original_value The original value passed to the function.
-	 * @return string The orginal value.
+	 * @return string The original value.
 	 */
 	function filter_allow_unavailable_languages( $value, $option, $original_value ) {
 		return $original_value;

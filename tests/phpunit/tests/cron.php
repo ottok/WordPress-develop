@@ -44,7 +44,7 @@ class Tests_Cron extends WP_UnitTestCase {
 		$args = array('foo');
 
 		wp_schedule_single_event( $timestamp, $hook, $args );
-		// this returns the timestamp only if we provide matching args
+		// this returns the timestamp only if we provide matchingg args
 		$this->assertEquals( $timestamp, wp_next_scheduled($hook, $args) );
 		// these don't match so return nothing
 		$this->assertEquals( false, wp_next_scheduled($hook) );
@@ -75,7 +75,7 @@ class Tests_Cron extends WP_UnitTestCase {
 		$args = array('foo');
 
 		wp_schedule_event( $timestamp, 'hourly', $hook, $args );
-		// this returns the timestamp only if we provide matching args
+		// this returns the timestamp only if we provide matchingg args
 		$this->assertEquals( $timestamp, wp_next_scheduled($hook, $args) );
 		// these don't match so return nothing
 		$this->assertEquals( false, wp_next_scheduled($hook) );

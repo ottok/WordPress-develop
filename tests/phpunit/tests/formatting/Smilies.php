@@ -254,7 +254,7 @@ class Tests_Formatting_Smilies extends WP_UnitTestCase {
 			smilies_init();
 		}
 
-		$orig_trans = $wpsmiliestrans; // save original tranlations array
+		$orig_trans = $wpsmiliestrans; // save original translations array
 
 		$wpsmiliestrans = array (
 		  ':)' => 'simple-smile.png'
