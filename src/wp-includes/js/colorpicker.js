@@ -29,7 +29,7 @@ Last modified: 10/11/02
 DESCRIPTION: These functions find the position of an <A> tag in a document,
 so other elements can be positioned relative to it.
 
-COMPATABILITY: Netscape 4.x,6.x,Mozilla, IE 5.x,6.x on Windows. Some small
+COMPATIBILITY: Netscape 4.x,6.x,Mozilla, IE 5.x,6.x on Windows. Some small
 positioning errors - usually with Window positioning - occur on the
 Macintosh platform.
 
@@ -160,7 +160,7 @@ DESCRIPTION: This object allows you to easily and quickly popup a window
 in a certain place. The window can either be a DIV or a separate browser
 window.
 
-COMPATABILITY: Works with Netscape 4.x, 6.x, IE 5.x on Windows. Some small
+COMPATIBILITY: Works with Netscape 4.x, 6.x, IE 5.x on Windows. Some small
 positioning errors - usually with Window positioning - occur on the
 Macintosh platform. Due to bugs in Netscape 4.x, populating the popup
 window with <STYLE> tags may cause errors.
@@ -477,7 +477,7 @@ DESCRIPTION: This widget is used to select a color, in hexadecimal #RRGGBB
 form. It uses a color "swatch" to display the standard 216-color web-safe
 palette. The user can then click on a color to select it.
 
-COMPATABILITY: See notes in AnchorPosition.js and PopupWindow.js.
+COMPATIBILITY: See notes in AnchorPosition.js and PopupWindow.js.
 Only the latest DHTML-capable browsers will show the color and hex values
 at the bottom as your mouse goes over them.
 

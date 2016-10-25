@@ -272,7 +272,7 @@ wp.customize.selectiveRefresh = ( function( $, api ) {
 			}
 
 			/* jshint ignore:start */
-			self.orginalDocumentWrite = document.write;
+			self.originalDocumentWrite = document.write;
 			document.write = function() {
 				throw new Error( self.data.l10n.badDocumentWrite );
 			};
@@ -315,8 +315,8 @@ wp.customize.selectiveRefresh = ( function( $, api ) {
 				}
 			}
 			/* jshint ignore:start */
-			document.write = self.orginalDocumentWrite;
-			self.orginalDocumentWrite = null;
+			document.write = self.originalDocumentWrite;
+			self.originalDocumentWrite = null;
 			/* jshint ignore:end */
 
 			placement.container.removeClass( 'customize-partial-refreshing' );

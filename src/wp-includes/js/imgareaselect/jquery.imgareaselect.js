@@ -1206,7 +1206,7 @@ $.fn.imgAreaSelect = function (options) {
                 $(this).data('imgAreaSelect').setOptions(options);
         }
         else if (!options.remove) {
-            /* No exising instance -- create a new one */
+            /* No existing instance -- create a new one */
 
             /*
              * If neither the "enable" nor the "disable" option is present, add
